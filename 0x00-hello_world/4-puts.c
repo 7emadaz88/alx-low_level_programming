@@ -1,7 +1,16 @@
 #include <stdio.h>
 
-int main(void) /*main function*/
+/**
+ * main - Entry point
+ *
+ * Description: 'prints specific text'
+ *
+ * Return: Always 0 (success)
+ */
+
+int main(void)
 {
+
 	char str1[] = "\"Programming is like building a multilingual puzzle";
 
 	puts(str1);
