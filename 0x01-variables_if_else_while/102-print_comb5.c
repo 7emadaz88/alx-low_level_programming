@@ -15,7 +15,6 @@ int main(void)
 	int k;
 	int m;
 	int a;
-	int b;
 
 	for (i = 0; i <= 9; i++)
 	{
@@ -31,8 +30,7 @@ int main(void)
 					putchar(k + '0');
 					putchar(m + '0');
 					a = (i * 10) + j;
-					b = (k * 10) + m;
-					if (a < 99 && b <= 99)
+					if (a < 98)
 					{
 						putchar(',');
 						putchar(' ');
