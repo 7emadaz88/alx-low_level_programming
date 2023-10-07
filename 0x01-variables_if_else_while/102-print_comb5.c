@@ -25,7 +25,7 @@ int main(void)
 				for (m = j - 1 ; m <= 9 ; m++)
 				{
 					putchar(i + '0');
-					putchar((j + 1) + '0');
+					putchar((j - 1) + '0');
 					putchar(' ');
 					putchar(k + '0');
 					putchar(m + '0');
