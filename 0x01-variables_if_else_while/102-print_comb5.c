@@ -22,13 +22,13 @@ int main(void)
 		{
 			for (k = i; k <= 9; k++)
 			{
-				for (m = 0 ; m <= 9 ; m++)
+				for (m = j + 1 ; m <= 9 ; m++)
 				{
 					putchar(i + '0');
 					putchar(j + '0');
 					putchar(' ');
 					putchar(k + '0');
-					putchar(m + '0');
+					putchar((m - 1) + '0');
 					a = (i * 10) + j;
 					if (a < 98)
 					{
