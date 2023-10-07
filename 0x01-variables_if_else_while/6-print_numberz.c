@@ -9,11 +9,11 @@
 
 int main(void)
 {
-	char t;
+	int t;
 
-	for (t = '0'; t <= '9'; t++)
+	for (t = 0; t <= 9; t++)
 	{
-		putchar(t);
+		putchar(t + '0');
 	}
 	putchar('\n');
 	return (0);
