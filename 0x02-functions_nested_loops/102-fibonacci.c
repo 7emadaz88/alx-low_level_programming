@@ -18,8 +18,8 @@ int main(void)
 	printf("1, 2");
 	for (i = 2; i < 50; i++)
 	{
-		b = c;
 		a = b;
+		b = c;
 		c = a + b;
 		printf(", %li", c);
 	}
