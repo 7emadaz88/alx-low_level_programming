@@ -10,18 +10,18 @@
 
 int main(void)
 {
-	float a = 0;
-	float b = a + 1;
-	float c = a + b;
+	long double a = 1;
+	long double b = a + 1;
+	long double c = a + b;
 	int i;
 
-	printf("1");
-	for (i = 1; i < 98; i++)
+	printf("%.0Lf, %.0Lf, %.0Lf", a, b, c);
+	for (i = 2; i < 97; i++)
 	{
 		a = b;
 		b = c;
 		c = a + b;
-		printf(", %.0f", c);
+		printf(", %.0Lf", c);
 	}
 	printf("\n");
 	return (0);
