@@ -14,7 +14,6 @@ int main(void)
 	long b = a + 1;
 	long c = a + b;
 	long sum = 0;
-	int count = 0;
 
 	while (c < 4000000)
 	{
