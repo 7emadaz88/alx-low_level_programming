@@ -10,9 +10,9 @@
 
 int main(void)
 {
-	long a = 0;
-	long b = a + 1;
-	long c = a + b;
+	unsigned long a = 0;
+	unsigned long b = a + 1;
+	unsigned long c = a + b;
 	int i;
 
 	printf("1");
