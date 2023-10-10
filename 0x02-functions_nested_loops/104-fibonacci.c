@@ -10,9 +10,9 @@
 
 int main(void)
 {
-	unsigned long a = 0;
-	unsigned long b = a + 1;
-	unsigned long c = a + b;
+	float a = 0;
+	float b = a + 1;
+	float c = a + b;
 	int i;
 
 	printf("1");
@@ -21,7 +21,7 @@ int main(void)
 		a = b;
 		b = c;
 		c = a + b;
-		printf(", %li", c);
+		printf(", %.0f", c);
 	}
 	printf("\n");
 	return (0);
