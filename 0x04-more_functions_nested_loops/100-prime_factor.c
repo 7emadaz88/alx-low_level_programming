@@ -13,12 +13,12 @@ int main(void)
 
 	for (i = 2; i <= n; i++)
 	{
-		if(n % i == 0)
+		if (n % i == 0)
 		{
 			n = n / i;
 			c = i;
 			i = 1;
-			if(n / c == 1)
+			if (n / c == 1)
 			{
 				i = c;
 			}
