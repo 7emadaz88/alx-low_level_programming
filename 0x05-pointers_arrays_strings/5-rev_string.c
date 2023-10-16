@@ -4,7 +4,7 @@
 /**
  * rev_string - entry point
  * Description: print reverse
- * @a: user input
+ * @s: user input
  * Return: integer
 */
 
