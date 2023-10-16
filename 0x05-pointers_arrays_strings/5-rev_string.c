@@ -2,7 +2,7 @@
 #include "2-strlen.c"
 
 /**
- * print_rev - entry point
+ * rev_string - entry point
  * Description: print reverse
  * @a: user input
  * Return: integer
