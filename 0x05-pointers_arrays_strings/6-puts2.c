@@ -13,7 +13,7 @@ void puts2(char *s)
 	int i, n;
 
 	n = _strlen(s);
-	for (i = 0; i < n; i+= 2)
+	for (i = 0; i < n; i += 2)
 	{
 		_putchar(s[i]);
 	}
