@@ -15,11 +15,11 @@ void puts_half(char *s)
 	n = _strlen(s);
 	if (n % 2 == 0)
 	{
-		m = (n / 2) + 1;
+		m = (n / 2);
 	}
 	else
 	{
-		m = (n - 1) / 2;
+		m = ((n - 1) / 2) + 1;
 	}
 	for (i = m; i < n; i++)
 	{
