@@ -27,6 +27,10 @@ char *_strncat(char *dest, char *src, int n)
 			break;
 		}
 	}
+	if (n > _strlen(src))
+	{
+		n = _strlen(src);
+	}
 	for (i = j; i < n + j; i++)
 	{
 		dest[i] = src[i - j];
