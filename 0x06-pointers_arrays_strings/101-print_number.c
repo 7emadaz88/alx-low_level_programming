@@ -27,18 +27,18 @@ void print_number(int m)
 		_putchar(((n / 10) % 10) + '0');
 		_putchar((n % 10) + '0');
 	}
-	else if (n > 99 && n < 999)
+	else if (n > 99 && n <= 999)
 	{
 		_putchar((n / 100) + '0');
 		_putchar(((n / 10) % 10) + '0');
 		_putchar((n % 10) + '0');
 	}
-	else if (n > 9 && n < 99)
+	else if (n > 9 && n <= 99)
 	{
 		_putchar((n / 10) + '0');
 		_putchar((n % 10) + '0');
 	}
-	else if (n >= 0 && n < 10)
+	else if (n >= 0 && n <= 9)
 	{
 		_putchar(n + '0');
 	}
