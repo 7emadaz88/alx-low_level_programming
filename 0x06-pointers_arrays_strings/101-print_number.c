@@ -3,43 +3,44 @@
 /**
  * print_number - main entry
  * Description:  prints numbers
- * @m: input
+ * @n: input
  * Return - void
 */
 
-void print_number(int m)
+void print_number(int n)
 {
-	int n;
+	unsigned int abs;
+	int mult = 1;
+	unsigned int abSCount;
+	int i;
+	int c = 0;
 
-	if (m < 0)
+	if (n == 0)
+	{
+		_putchar('0');
+	}
+	if (n < 0)
 	{
 		_putchar('-');
-		n = m * -1;
+		n += 1;
+		n *= -1;
+		n++;
 	}
-	else if (m >= 0)
+	abs = n;
+	abSCount = n;
+
+	while (abSCount > 0)
 	{
-		n = m;
+		abSCount /= 10;
+		c++;
 	}
-	if (n > 999)
+	for (i = 0; i < c - 1; i++)
+		mult *= 10;
+
+	for (i = 0; i < c; i++)
 	{
-		_putchar((n / 1000) + '0');
-		_putchar(((n / 100) % 10) + '0');
-		_putchar(((n / 10) % 10) + '0');
-		_putchar((n % 10) + '0');
-	}
-	else if (n > 99 && n <= 999)
-	{
-		_putchar((n / 100) + '0');
-		_putchar(((n / 10) % 10) + '0');
-		_putchar((n % 10) + '0');
-	}
-	else if (n > 9 && n <= 99)
-	{
-		_putchar((n / 10) + '0');
-		_putchar((n % 10) + '0');
-	}
-	else if (n >= 0 && n <= 9)
-	{
-		_putchar(n + '0');
+		_putchar((abs / mult) + '0');
+		abs = abs % mult;
+		mult /= 10;
 	}
 }
