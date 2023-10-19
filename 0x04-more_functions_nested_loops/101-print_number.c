@@ -3,19 +3,20 @@
 /**
  * print_number - main entry
  * Description:  prints numbers
- * @n: input
+ * @m: input
  * Return - void
 */
 
 void print_number(int m)
 {
 	int n;
+
 	if (m < 0)
 	{
 		_putchar('-');
 		n = m * -1;
 	}
-	else if(m > 0)
+	else if (m >= 0)
 	{
 		n = m;
 	}
