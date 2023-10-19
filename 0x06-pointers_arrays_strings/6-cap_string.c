@@ -19,7 +19,7 @@ char *cap_string(char *s)
 
 		if (s[i] >= 'a' && s[i] <= 'z')
 		{
-			if (s[j] == ' ' || s[j] == ',')
+			if (s[j] == ' ' || s[j] == ',' || i == 0)
 			{
 				s[i] = s[i] - 32;
 			}
@@ -35,11 +35,11 @@ char *cap_string(char *s)
 			{
 				s[i] = s[i] - 32;
 			}
-			else if ((s[j] == '\n'))
+			else if (s[j] == '\n')
 			{
 				s[i] = s[i] - 32;
 			}
-			else if ((s[j] == '\t'))
+			else if (s[j] == '\t')
 			{
 				s[i] = s[i] - 32;
 			}
