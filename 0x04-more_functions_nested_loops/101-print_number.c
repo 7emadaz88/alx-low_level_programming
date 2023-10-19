@@ -38,7 +38,7 @@ void print_number(int m)
 		_putchar((n / 10) + '0');
 		_putchar((n % 10) + '0');
 	}
-	else if (n >= 0 && n <= 9 )
+	else if (n >= 0 && n <= 9)
 	{
 		_putchar(n + '0');
 	}
