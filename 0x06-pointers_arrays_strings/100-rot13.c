@@ -1,5 +1,4 @@
 #include "main.h"
-#include "xstrlen.c"
 
 /**
  * rot13 - entry point
@@ -14,15 +13,15 @@ char *rot13(char *s)
 	int j;
 	char *d = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char *e = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-	int n = _strlen(s);
 
-	for (i = 0; i < n; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		for (j = 0; j < 52; j++)
 		{
 			if (s[i] == d[j])
 			{
 				s[i] = e[j];
+				break;
 			}
 		}
 	}
