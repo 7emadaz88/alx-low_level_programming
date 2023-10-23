@@ -22,8 +22,10 @@ char *_strstr(char *s, char *c)
 				break;
 			}
 		}
-        if (!c[j])
-            return (&s[i]);
+		if (!c[j])
+		{
+			return (&s[i]);
+		}
 	}
-    return ('\0');
+	return ('\0');
 }
