@@ -24,7 +24,8 @@ char *_strchr(char *s, char c)
 			if (*(s + i) != c)
 				i++;
 			else
-				return (s);
+				break;
 		}
+		return (s);
 	}
 }
