@@ -24,12 +24,5 @@ char *_strpbrk(char *s, char *c)
 		}
 		s++;
 	}
-	if (*s == c[j])
-	{
-		return (s);
-	}
-	else
-	{
-		return ('\0');
-	}
+	return ('\0');
 }
