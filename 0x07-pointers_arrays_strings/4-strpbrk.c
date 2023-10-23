@@ -11,22 +11,25 @@
 
 char *_strpbrk(char *s, char *c)
 {
-	unsigned int n = 0;
-	int i = 0, j = 0;
+	int i, j;
 
-	for (i = 0; i < _strlen(s); i++)
+	for (i = 0; *s != '\0'; i++)
 	{
-        while (j < _strlen(c))
+		for (j = 0; c[j] != '\0'; j++)
+		{
+			if (*s == c[j])
 			{
-				if (c[j] != s[i])
-				{
-					j++;
-				}
-				else
-				{
-					return (s);
-				}
+				return (s);
 			}
+		}
+		s++;
 	}
-	return (s);
+    if (*s == c[j])
+	{
+		return (s);
+	}
+	else
+	{
+		return ('\0');
+	}
 }
