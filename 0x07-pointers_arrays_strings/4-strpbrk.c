@@ -24,7 +24,7 @@ char *_strpbrk(char *s, char *c)
 		}
 		s++;
 	}
-    if (*s == c[j])
+	if (*s == c[j])
 	{
 		return (s);
 	}
