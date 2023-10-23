@@ -11,6 +11,8 @@
 
 char *_strchr(char *s, char c)
 {
+	int i = 0;
+
 	if (c == '\0')
 	{
 		return ('\0');
@@ -19,11 +21,10 @@ char *_strchr(char *s, char c)
 	{
 		while (*s)
 		{
-			if (*s != c)
-				s++;
+			if (*(s + i) != c)
+				i++;
 			else
-				break;
+				return (s);
 		}
 	}
-	return (s);
 }
