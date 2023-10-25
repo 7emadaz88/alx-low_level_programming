@@ -7,7 +7,9 @@ int finder_sqrt(int n, int i);
  * Description: square root finder
  * @n: number to calculate the square root of
  * Return: the resulting square root
- *
+*/
+
+/**
  * finder_sqrt - entry point
  * Description: square root of a number
  * @n: number to calculate the sqaure root of
