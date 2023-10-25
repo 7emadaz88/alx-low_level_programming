@@ -1,5 +1,4 @@
 #include "main.h"
-#include "xstrlen.c"
 /**
  * _print_rev_recursion - entry point
  * Description: prints a string backwards
@@ -8,14 +7,11 @@
 */
 void _print_rev_recursion(char *s)
 {
-    int n = _strlen(s);
-
-    if (n >= 0)
+    if (s == '\0')
     {
-        _putchar(s[n]);
-        _print_rev_recursion(s - 1);
+        return;
     }
-    _putchar('\n');
-    return;
+    _putchar(*s);
+    _print_rev_recursion(s - 1);
     
 }
