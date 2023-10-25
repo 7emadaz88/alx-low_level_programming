@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _factorial - entry point
+ * factorial - entry point
  * Description: string length
  * @n: user input
  * Return: int
