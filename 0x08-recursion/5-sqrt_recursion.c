@@ -1,7 +1,5 @@
 #include "main.h"
 
-int finder_sqrt(int n, int i);
-
 /**
  * _sqrt_recursion - entry point
  * Description: square root finder
@@ -9,26 +7,26 @@ int finder_sqrt(int n, int i);
  * Return: the resulting square root
 */
 
+int _sqrt_recursion(int n)
+{
+	if (n < 0)
+		return (-1);
+	return (_finder_sqrt(n, 0));
+}
+
 /**
- * finder_sqrt - entry point
+ * _finder_sqrt - entry point
  * Description: square root of a number
  * @n: number to calculate the sqaure root of
  * @i: testing integer
  * Return: the resulting square root
 */
 
-int _sqrt_recursion(int n)
-{
-	if (n < 0)
-		return (-1);
-	return (finder_sqrt(n, 0));
-}
-
-int finder_sqrt(int n, int i)
+int _finder_sqrt(int n, int i)
 {
 	if (i * i > n)
 		return (-1);
 	if (i * i == n)
 		return (i);
-	return (finder_sqrt(n, i + 1));
+	return (_finder_sqrt(n, i + 1));
 }
