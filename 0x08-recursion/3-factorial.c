@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * factorial - entry point
- * Description: string length
+ * Description: factorial of n
  * @n: user input
  * Return: int
 */
