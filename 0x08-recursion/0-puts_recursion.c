@@ -1,6 +1,4 @@
 #include "main.h"
-#include "xstrlen.c"
-
 /**
  * _puts_recursion - entry point
  * Description: prints a string
