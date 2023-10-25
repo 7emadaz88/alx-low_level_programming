@@ -8,6 +8,8 @@
 */
 int _pow_recursion(int x, int y)
 {
+    int n = 0;
+    
     if (y == 0)
     {
         return (1);
@@ -22,8 +24,6 @@ int _pow_recursion(int x, int y)
     {
         return (-1);
     }
-
-    int n = 0;
 
     if (n < y)
     {
