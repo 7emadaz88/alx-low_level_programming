@@ -10,9 +10,9 @@
 
 void _puts_recursion(char *s)
 {
-    int n = 0;
+    unsigned int n = 0;
 
-    if (s[n] >= _strlen(s))
+    if (s[n] == '\0')
     {
         _putchar('\n');
         return;
