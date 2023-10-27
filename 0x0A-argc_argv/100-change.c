@@ -22,35 +22,32 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	else
+	while (x > 0)
 	{
-		while (x > 0)
+		if (x >= 25)
 		{
-			if (x % 25 == 0)
-			{
-				c++;
-				x = x - 25;
-			}
-			else if (x % 10 == 0)
-			{
-				c++;
-				x = x - 10;
-			}
-			else if (x % 5 == 0)
-			{
-				c++;
-				x = x - 5;
-			}
-			else if (x % 2 == 0)
-			{
-				c++;
-				x = x - 2;
-			}
-			else
-			{
-				c++;
-				x = x - 1;
-			}
+			c++;
+			x -= 25;
+		}
+		else if (x >= 10)
+		{
+			c++;
+			x -= 10;
+		}
+		else if (x >= 5)
+		{
+			c++;
+			x -= 5;
+		}
+		else if (x >= 2)
+		{
+			c++;
+			x -= 2;
+		}
+		else
+		{
+			c++;
+			x--;
 		}
 	}
 	printf("%i\n", c);
