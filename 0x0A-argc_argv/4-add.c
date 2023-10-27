@@ -1,7 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
 /**
  * main - entry point
- * prints arguments
+ * adds arguments if numbers
  * @argc: argument count
  * @argv: argument array
  * Return: zero
@@ -25,11 +27,8 @@ int main(int argc, char *argv[])
 					printf("Error\n");
 					return (1);
 				}
-				else
-				{
-					sum += atoi(argv[i]);
-				}
 			}
+			sum += atoi(argv[i]);
 		}
 	}
 	printf("%i\n", sum);
