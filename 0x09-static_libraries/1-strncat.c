@@ -1,5 +1,4 @@
 #include "main.h"
-#include "2-strlen.c"
 
 /**
  * _strncat - entry point
@@ -12,28 +11,5 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int i = 0;
-	int j = 0;
-
-	while (i >= 0)
-	{
-		if (dest[i] != '\0')
-		{
-			j++;
-			i++;
-		}
-		else
-		{
-			break;
-		}
-	}
-	if (n > _strlen(src))
-	{
-		n = _strlen(src);
-	}
-	for (i = j; i < n + j; i++)
-	{
-		dest[i] = src[i - j];
-	}
 	return (dest);
 }
