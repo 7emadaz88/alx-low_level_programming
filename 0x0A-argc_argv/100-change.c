@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	x = atoi(argv[2]);
+	x = atoi(argv[1]);
 	if (x < 1)
 	{
 		printf("0\n");
@@ -53,6 +53,6 @@ int main(int argc, char *argv[])
 			}
 		}
 	}
-	printf("%i", c);
+	printf("%i\n", c);
 	return (0);
 }
