@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * _concat - entry point
+ * str_concat - entry point
  * concatenates two strings
  * @s1: user input
  * @s2: user input
@@ -18,7 +18,7 @@ char *str_concat(char *s1, char *s2)
 	while (s2[l2] != '\0')
 		l2++;
 
-	x = (char *)malloc((l1 + l2) * sizeof(char));
+	x = (char *)malloc(((l1 + l2) * sizeof(char) + 1));
 
 	if (x == NULL)
 		return (NULL);
