@@ -5,7 +5,7 @@
  * creates array of chars
  * @size: user input
  * @c: user input
- * return: char
+ * Return: pointer
 */
 char *create_array(unsigned int size, char c)
 {
@@ -14,7 +14,7 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0)
 	{
-		x = NULL;
+		return (NULL);
 	}
 	else
 	{
