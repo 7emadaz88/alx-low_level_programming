@@ -14,11 +14,14 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0)
 	{
-		return ('\0');
+		*x = '\0';
 	}
-	for (i = 0; i < size; i++)
+	else
 	{
-		x[i] = c;
+		for (i = 0; i < size; i++)
+		{
+			x[i] = c;
+		}
 	}
-	return (*x);
+	return (x);
 }
