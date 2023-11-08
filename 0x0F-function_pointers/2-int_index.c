@@ -12,6 +12,8 @@ int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i = 0, j;
 
+	if (size <= 0)
+		return (-1);
 	if (array != NULL && size != 0 && cmp != NULL)
 	{
 		while (i < size)
@@ -22,6 +24,9 @@ int int_index(int *array, int size, int (*cmp)(int))
 			else
 				break;
 		}
-		return (i);
+		if (i == size)
+			return (-1);
+		else
+			return (i);
 	}
 }
